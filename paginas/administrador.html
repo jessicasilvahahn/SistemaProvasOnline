@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="SISconsult">
+    <link rel="icon" href="../imagens/IFSC.png">
+
+    <title>Login </title>
+
+   <!-- Bootstrap core CSS -->
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/signin.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin" action="../servidor/tratamentoPaginas.php" method="post">
+     	<input type="hidden" name="escolheOperacao" value="administrador">
+        <label class="btn btn-lg btn-danger btn-block">SISconsult</label><br>
+        <label for="labelEmailAdm" class="sr-only">Email</label>
+        <input type="text" id="inputEmailAdm" class="form-control" placeholder="Email" name = "inputEmailAdm" required autofocus>
+        <br>
+        <label for="labelSenhaAdm" class="sr-only">Senha</label>
+        <input type="password" id="inputSenhaAdm" class="form-control" placeholder="Senha" name = "inputSenhaAdm" required>
+        <button class="btn btn-md btn-primary btn-block" type="submit" id="entrarAdm">Entrar</button>
+      </form>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
