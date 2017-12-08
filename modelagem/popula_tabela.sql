@@ -1,0 +1,495 @@
+insert into Administrador (nome,email,nascimento,login,senha) values('xezica','jessica@bol.com.br','1993-07-01','adm','adm');
+insert into Candidato (nome,email,nascimento,login,senha) values('teteu','mateus@bol.com.br','1995-07-01','aluno','aluno');
+insert into Elaborador (nome,email,nascimento,login,senha) values('leleca','leticia@bol.com.br','1993-07-01','elab','elab');
+insert into Candidato (nome,email,nascimento,login,senha) values('pauleca','paula@bol.com.br','1995-07-01','aluno2','aluno2');
+insert into Elaborador (nome,email,nascimento,login,senha) values('fefe','fernando@bol.com.br','1993-07-01','elab2','elab2');
+insert into ProcessoSeletivo (idProcessoSeletivo,tempoInicioCadastro,tempoFimCadastro,idAdministrador) values(1,'2017-12-03 08:00','2017-12-05 16:00',1);
+insert into Prova (idProcessoSeletivo,tempoInicio,tempoFim) values(1,'2017-12-06 08:30','2017-12-06 11:30');
+
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,TRUE,'Qual o nome cientifico associado a cachorro?','conhecimentos basicos',1,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,TRUE,'Com quantos paus se faz uma canoa?','conhecimentos basicos',1,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,TRUE,'Quem descobriu o Brasil?','conhecimentos basicos',1,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,TRUE,'Nome de Ponte que voce sai de floripa?','conhecimentos basicos',1,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,TRUE,'Melhor time do Brasil?','conhecimentos basicos',1,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Qual a capital do ESTADO CIVIL?','conhecimentos basicos',null,2);
+
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'Quem e canhoto pode prestar vestibular para direito?','direito',null,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'Por que os violentos furacões tem nome de mulheres?','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'DIREITO PENAL e aquele que trata das relações entre aves ?','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'LEIS CONCRETAS sao aquelas elaboradas por pedreiros ?','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Tem algum direito a mulher em TRABALHO DE PARTO sem carteira assinada?','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Para que ocorra uma prisao de ventre e necessario haver FLAGRANTE?','direito',null,2);
+
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'Quem veio primeiro. O ovo ou a galinha?','ciencias',null,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'Galinhas são passáros ou animais?','ciencias',null,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'QUEIMADURA DE TERCEIRO GRAU é aquela que ocorre no curso universitário?','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'CONTRATO BILATERAL e aquele celebrado entre o Cafu e o Roberto Carlos ?','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Se a vaca come grama e toma agua, porque ela da leite e nao chá?','ciencias',null,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Quantas calorias tem a caca de um nariz	?','ciencias',null,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Qual o formato da terra?','ciencias',null,1);
+
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'Se o vinho e liquido, como pode ter vinho seco?','Poesia',null,1);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'Quantos quilos por dia emagrece um casal que optou pelo REGIME PARCIAL?','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'BENS MOÓVEIS são os fabricados em marcenarias ?','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'Complete a Musica: "E nessa loucura, de dizer que não te quero... "','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'Complete a Musica: "Aqui tem um banco de loucos..	 "','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'Complete a Musica: "Imagine all the peopleeee "','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'Complete o ditado classico: "Ah que emocao profunda..."','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Complete o poema: "La na rua voce pode ser um valentao, mas aqui dentro..."','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Complete a frase "Tele e o..."','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Qual a melhor operadora de TV a Cabo?','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'Qual a obra literaria escrita por Luis Fernando de Camões?','Poesia',null,2);
+
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-poesia1','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-poesia2','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-poesia3','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-poesia4','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-poesia5','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-poesia6','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-poesia7','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-poesia8','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-poesia9','Poesia',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-poesia10','Poesia',null,2);
+
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-ciencia-1','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-ciencia-2','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-ciencia-3','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-ciencia-4','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-ciencia-5','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-ciencia-6','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-ciencia-7','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-ciencia-8','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-ciencia-9','ciencias',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-ciencia-10','ciencias',null,2);
+
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-direito-1','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-direito-2','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-direito-3','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-direito-4','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-direito-5','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-direito-6','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-direito-7','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-direito-8','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-direito-9','direito',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-direito-10','direito',null,2);
+
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-conhbasicos-1','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-conhbasicos-2','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(1,FALSE,'teste-conhbasicos-3','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-conhbasicos-4','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-conhbasicos-5','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(2,FALSE,'teste-conhbasicos-6','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-conhbasicos-7','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-conhbasicos-8','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-conhbasicos-9','conhecimentos basicos',null,2);
+insert into Questao (dificuldade,usada,descricao,tema,idProva,idElaborador) values(3,FALSE,'teste-conhbasicos-10','conhecimentos basicos',null,2);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('cachoritios buzicos',1,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('cah choros',1,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('buzicos cachorineos',1,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('buz icos',1,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('cachorro buzico',1,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('1',2,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('2',2,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('3',2,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('4',2,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('5',2,false);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Gorete do SUl da Ilha',3,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Dazaranha',3,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Mario Motta',3,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Dilma',3,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Pedro Alvares',3,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Ponte?',4,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Sair da Ilha?',4,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Hercilio Luz',4,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Rio-Niteroi',4,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Colombo Salles',4,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Corinthians',5,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Que pergunta ridicula',5,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Obvio que é o Corinthians',5,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('O único clube heptacampeao Brasileiro',5,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Todas as demais',5,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',6,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',6,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',6,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',6,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',6,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',7,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',7,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',7,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',7,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',7,true);
+
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',8,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',8,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',8,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',8,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',8,true);
+
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',9,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',9,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',9,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',9,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',9,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',10,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',10,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',10,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',10,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',10,true);
+
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',11,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',11,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',11,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',11,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',11,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',12,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',12,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',12,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',12,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',12,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',12,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',12,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',12,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',12,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',12,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Nenhum dos dois',13,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Paulo Baier',13,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Jair BOlsonaro',13,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Ovo',13,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('Galinha',13,true);
+
+insert into Alternativas  (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',14,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',14,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',14,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',14,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',14,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',15,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',15,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',15,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',15,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',15,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',16,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',16,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',16,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',16,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',16,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',17,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',17,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',17,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',17,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',17,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',18,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',18,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',18,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',18,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',18,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',19,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',19,false);
+insert into Alternativas  (descricao,idQuestao,alternativaCorreta)values('final de ano mesmo',19,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',19,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',19,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',20,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',20,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',20,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',20,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',20,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',21,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',21,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',21,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',21,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',21,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',22,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',22,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',22,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',22,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',22,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',23,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',23,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',23,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',23,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',23,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',24,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',24,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',24,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',24,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',24,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',25,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',25,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',25,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',25,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',25,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',26,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',26,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',26,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',26,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',26,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',27,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',27,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',27,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',27,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',27,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',28,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',28,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',28,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',28,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',28,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',29,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',29,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',29,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',29,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',29,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',30,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',30,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',30,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',30,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',30,true);
+
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',31,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',31,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',31,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',31,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',31,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',32,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',32,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',32,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',32,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',32,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',33,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',33,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',33,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',33,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',33,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',34,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',34,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',34,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',34,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',34,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',35,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',35,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',35,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',35,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',35,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',36,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',36,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',36,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',36,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',36,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',37,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',37,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',37,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',37,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',37,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',38,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',38,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',38,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',38,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',38,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',39,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',39,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',39,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',39,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',39,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',40,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',40,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',40,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',40,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',40,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',41,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',41,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',41,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',41,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',41,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',42,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',42,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',42,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',42,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',42,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',43,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',43,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',43,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',43,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',43,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',44,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',44,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',44,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',44,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',44,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',45,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',45,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',45,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',45,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',45,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',46,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',46,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',46,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',46,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',46,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',47,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',47,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',47,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',47,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',47,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',48,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',48,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',48,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',48,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',48,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',49,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',49,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',49,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',49,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',49,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',50,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',50,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',50,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',50,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',50,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',51,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',51,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',51,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',51,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',51,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',52,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',52,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',52,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',52,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',52,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',53,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',53,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',53,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',53,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',53,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',54,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',54,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',54,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',54,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',54,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',55,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',55,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',55,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',55,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',55,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',56,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',56,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',56,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',56,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',56,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',57,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',57,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',57,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',57,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',57,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',58,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',58,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',58,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',58,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',58,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',59,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',59,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',59,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',59,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',59,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',60,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',60,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',60,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',60,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',60,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',61,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',61,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',61,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',61,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',61,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',62,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',62,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',62,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',62,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',62,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',63,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',63,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',63,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',63,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',63,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',64,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',64,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',64,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',64,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',64,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',65,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',65,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',65,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',65,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',65,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',66,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',66,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',66,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',66,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',66,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',67,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',67,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',67,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',67,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',67,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',68,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',68,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',68,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',68,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',68,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',69,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',69,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',69,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',69,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',69,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('fiquei com preguica',70,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('vai ser ctrlc ctrlv agora',70,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('final de ano mesmo',70,true);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('semestre ta acabando logo',70,false);
+insert into Alternativas (descricao,idQuestao,alternativaCorreta) values('prof vai dar 10 mesmo',70,false);
+
+insert into CandidatoMatriculaProva (idProva,idCandidato) values (1,1);
+insert into CandidatoMatriculaProva (idProva,idCandidato) values (1,2);
+
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (1,1,5);
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (2,1,8);
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (3,1,14);
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (4,1,20);
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (5,1,25);
+
+
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (1,2,4);
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (2,2,10);
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (3,2,15);
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (4,2,16);
+insert into Resposta (idQuestao,idCandidato,idAlternativas) values (5,2,22);
+
+insert into Recurso (idCandidato,idQuestao,idRecurso,idProva,descricao,deferimento,justificativa) values(1,1,1,1,'resposta esta errada. o correto é D',null,null);
+insert into Recurso (idCandidato,idQuestao,idRecurso,idProva,descricao,deferimento,justificativa) values(2,1,2,1,'resposta esta errada. o correto é D',null,null);
+insert into Recurso (idCandidato,idQuestao,idRecurso,idProva,descricao,deferimento,justificativa) values(2,5,3,1,'resposta esta errada. o correto é D',null,null);
